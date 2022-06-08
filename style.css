@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300;400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+
+:root{
+    --yellow: #f7de82;
+    --blue: #0c4ea2;
+    --bold: 900;
+    --medium: 700;
+    --regular: 400;
+    --thin: 300;
+}
+
+body{
+    width: 100vw;
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    background: var(--yellow);
+    padding: 3rem 1rem 8rem 1rem;
+}
+
+/* Menu */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu i{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.container-items{
+    order: 1;
+    width: 100%;
+}
+
+.item {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: none;
+}
+
+/* seccion 1 */
+
+.about-section{
+    background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-content{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pedimon-logo-menu{
+    width: 350px;
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: var(--thin);
+    margin: 1rem 0 4rem 0;
+}
+
+.btn-hero{
+    background: var(--blue);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.about-img{
+    width: 100%;
+    margin: 5rem auto;
+}
+
+/* seccion 2 */
+
+.description-section{
+    background: var(--blue);
+    padding: 8rem 0;
+}
+
+.description-section h2{
+    color: var(--yellow);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: var(--medium);
+    text-transform: uppercase;
+}
+
+.description-section p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 300px;
+    margin: 2rem auto 10rem auto;
+}
+
+.img-card{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* seccion 3 */
+.products-section{
+    background-color: white;
+    padding: 8rem 0;
+}
+
+.products-section h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--blue);
+}
+
+.products-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product img{
+    max-width: 200px;
+}
+
+.product{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.product-title{
+    font-size: 2rem;
+    max-width: 200px;
+    margin-top: 2rem;
+    color: black;
+}
+
+.product-price{
+    color: var(--blue);
+    font-weight: var(--medium);
+     font-size: 2.5rem;
+     margin: 2rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.btn-products{
+    background-color: var(--yellow);
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    padding: 1rem 5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.sin-stock{
+    background: #f01919;
+    color: white;
+    padding: 1rem 1.3rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.disabled{
+    background: #f3f3f3;
+    cursor: no-drop;
+}
+/* seccion 4 */
+
+.cart-section{
+    background:#f3f3f3;
+    padding: 4rem 0;
+}
+
+.cart-section h2{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.cart-section p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--blue);
+    margin: 1.5rem 0 2rem 0;
+}
+
+.item-img{
+    width: 50px;
+}
+
+.cart-container{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    color: var(--blue);
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-price{
+    font-size: 2rem;
+    font-weight: var(--medium);
+}
+
+.cart-title{
+    font-weight: var(--thin);
+}
+
+.total-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--blue);
+    padding: 1rem 2rem;
+}
+
+/* seccion 4 */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--blue);
+    color: white;
+    padding: 8rem 0;
+}
+
+footer .title{
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+.contacto{
+    margin-bottom: 2rem;
+}
+
+.contacto a {
+    color: white;
+}
+
+.legales{
+    max-width: 280px;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 1024px) {
+  .menu{
+      flex-wrap: nowrap;
+      justify-content: space-around;
+  }
+  .container-items {
+      display: flex;
+      justify-content: flex-end;
+      gap: 50px;
+  }
+
+  .item {
+       display: flex;
+       width: auto;
+       
+  }
+
+  .btn-container {
+      display: none;
+  }
+.about-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+.about-content {
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 70%;
+    margin-bottom: 50px;
+}
+.about-content p {
+    text-align: left;
+    max-width: 700px;
+}
+.about-img {
+    max-width: 500px;
+    margin: 0;
+}
+
+.card-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.cart-container {
+    max-width: 1000px;
+}
+
+
+}
